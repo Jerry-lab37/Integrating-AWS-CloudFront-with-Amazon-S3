@@ -44,6 +44,7 @@ This guide provides a step-by-step approach to integrating **AWS CloudFront** wi
 3.Click Save
 
 ##**Step 4: Create a CloudFront Distribution**
+```
 Go to AWS Console → CloudFront
 Click Create Distribution
 Under Origin, configure:
@@ -59,19 +60,22 @@ Alternate Domain Name (CNAME) → Add a custom domain (optional)
 SSL Certificate → Use AWS default SSL or upload your own
 Click Create Distribution
 Wait for CloudFront Status to become Deployed
+```
 
 Step 5: Test the Setup
 Copy the CloudFront Distribution URL
 Open a browser and enter:
-
+```
 https://<CloudFront-Domain-Name>/index.html
-
+```
 3.Your static website or image should now load via CloudFront
 Sample Files for Testing
+```
 Download Sample .jpg File
 Download Sample Image
-
+```
 Sample index.html for S3
+```json
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,6 +88,7 @@ Sample index.html for S3
     <img src="https://<CloudFront-Domain-Name>/image.jpg" alt="Sample Image">
 </body>
 </html>
+```
 
 Note: Replace <CloudFront-Domain-Name> with your actual CloudFront distribution domain name.
 
