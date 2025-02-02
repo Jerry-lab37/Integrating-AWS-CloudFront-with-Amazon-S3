@@ -40,7 +40,7 @@ This guide provides a step-by-step approach to integrating **AWS CloudFront** wi
     }
   ]
 }
-
+```
 3.Click Save
 
 ##**Step 4: Create a CloudFront Distribution**
